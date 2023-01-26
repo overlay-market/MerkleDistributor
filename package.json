@@ -27,6 +27,7 @@
     "test": "npx hardhat test"
   },
   "dependencies": {
+    "@nomiclabs/hardhat-etherscan": "^3.1.5",
     "@openzeppelin/contracts": "4.7.0"
   },
   "devDependencies": {
