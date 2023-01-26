@@ -1,11 +1,26 @@
 import BalanceTree from '../src/balance-tree'
-import { BigNumber } from 'ethers'
+import { userInfo } from './userInfo'
+import fs from 'fs'
+
+const treeInfo: any = []
 
 export function tree() {
-  const tree = new BalanceTree([
-    { account: '0x097a3a6ce1d77a11bda1ac40c08fdf9f6202103f', amount: BigNumber.from('1000000000000000000') },
-    { account: '0x097a3a6ce1d77a11bda1ac40c08fdf9f6202103f', amount: BigNumber.from('1000000000000000000') },
-  ])
+  const tree = new BalanceTree(userInfo)
+
+  userInfo.map(({ account, amount }, index) => {
+    const data = {
+      address: account,
+      proof: tree.getProof(index, account, amount),
+      amount: Number(amount),
+      index: index,
+    }
+
+    treeInfo.push(data)
+  })
+
+  fs.writeFile('data.txt', JSON.stringify(treeInfo), (err) => {
+    if (err) throw err
+  })
 
   return tree.getHexRoot()
 }
