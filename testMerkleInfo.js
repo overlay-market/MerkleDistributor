@@ -1,0 +1,48 @@
+;[
+  {
+    address: '0x6f71F4F0A8628e2F99325309456A096B502A4DD4',
+    proof: [
+      '0xe54c22dab4cbebaeae471fb7124415beab6acba550a2dca70822d0f496d9912a',
+      '0xbfbc0cf80a677beb00e3dc7001befc025651c044d8c181a7e408a77c1d9402c5',
+      '0xfc013d68c05cd175b6305f765666abeb3a7cf931f6a8c691d3e823c4b35316b3',
+    ],
+    amount: 10000000000000000000,
+    index: 0,
+  },
+  {
+    address: '0xa409777eAd209B2Aea888711326ff43a6C682D0f',
+    proof: [
+      '0x8ac9c0cafeb3eb163351f8c7a0f917f41197d6e3d15d726c54bd477731b7a522',
+      '0xbfbc0cf80a677beb00e3dc7001befc025651c044d8c181a7e408a77c1d9402c5',
+      '0xfc013d68c05cd175b6305f765666abeb3a7cf931f6a8c691d3e823c4b35316b3',
+    ],
+    amount: 10000000000000000000,
+    index: 1,
+  },
+  {
+    address: '0xB402C44459C3bb562135E98Ec62586bdEbB997B9',
+    proof: [
+      '0x7ddba429af01bf220953792f15e70e88f9477167ecf334c5fcf4321e189e7fef',
+      '0x64cd7defa4768853f6a7484bc0857d1d9eaa26bd2c03c7b1486b059db2aaddc4',
+      '0xfc013d68c05cd175b6305f765666abeb3a7cf931f6a8c691d3e823c4b35316b3',
+    ],
+    amount: 10000000000000000000,
+    index: 2,
+  },
+  {
+    address: '0x0123D14de43a3bBF6301198785864Bdd170526De',
+    proof: ['0xef0d131de67b2732b99789a5cae33e59c225b662cf0da50ace64d720bdce3b91'],
+    amount: 10000000000000000000,
+    index: 3,
+  },
+  {
+    address: '0x6E73411b3F2Be2431d3bc6c210A3746fF282Df47',
+    proof: [
+      '0x2f3f988200c84acae869d85391ac42d4470e2db37db9db0a140227fd50bc014a',
+      '0x64cd7defa4768853f6a7484bc0857d1d9eaa26bd2c03c7b1486b059db2aaddc4',
+      '0xfc013d68c05cd175b6305f765666abeb3a7cf931f6a8c691d3e823c4b35316b3',
+    ],
+    amount: 10000000000000000000,
+    index: 4,
+  },
+]
