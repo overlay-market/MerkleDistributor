@@ -1,4 +1,4 @@
-;[
+const data = [
   {
     address: '0x6f71F4F0A8628e2F99325309456A096B502A4DD4',
     proof: [
