@@ -6,7 +6,7 @@ import { tree } from './Tree'
 
 async function main() {
   const root = tree()
-  const endTime = 86400 + 1675832764
+  const endTime = 259200 + 1675968203
   const token = '0x58954C03A9d70C54be5E63478A565CD099D0939c'
 
   const MerkleDistributor = await ethers.getContractFactory('MerkleDistributor')
@@ -26,4 +26,4 @@ main()
   })
 
 // npx hardhat run --network arbitrum_testnet scripts/deployMerkleDistributor.ts
-// npx hardhat verify --network arbitrum_testnet 0x2b6b1a731971B7e6928C9679f3d5c92311FDBF4C 0x58954C03A9d70C54be5E63478A565CD099D0939c 0xc9df9917d1d4679e45b83c3193fee4c76785e2472a65f8991679880bfed045db 1675919164
+// npx hardhat verify --network arbitrum_testnet 0xAEA8CA6e3854E39373C67879aE654bC117c9931D 0x58954C03A9d70C54be5E63478A565CD099D0939c 0x3ca98dafae8689605187cf323b5322f2f6fab6cbceaafe32c8483adc31fb3e05 1676227403
