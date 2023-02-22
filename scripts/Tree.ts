@@ -11,7 +11,7 @@ export function tree() {
     treeInfo[`${account}`] = {
       address: account,
       proof: tree.getProof(index, account, amount),
-      amount: Number(amount),
+      amount: amount.toString(),
       index: index,
     }
   })
