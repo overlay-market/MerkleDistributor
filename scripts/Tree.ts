@@ -16,7 +16,7 @@ export function tree() {
     }
   })
 
-  fs.writeFile('data.txt', JSON.stringify(treeInfo), (err) => {
+  fs.writeFile('src/treeInfo.json', JSON.stringify(treeInfo), (err) => {
     if (err) throw err
   })
 
