@@ -1,38 +1,26 @@
 {
-  "0x6f71F4F0A8628e2F99325309456A096B502A4DD4": {
-    "address": "0x6f71F4F0A8628e2F99325309456A096B502A4DD4",
+  "0x8e8b3e19717A5DDCfccce9Bf3b225E61efDD7937": {
+    "address": "0x8e8b3e19717A5DDCfccce9Bf3b225E61efDD7937",
     "proof": [
-      "0x8a72619954e89b75de07fc50213f7886bf9ca6f81d9c435562e435b80bd1c575",
-      "0x91e40bd1eb9ff4865b54fd9995f0cb59ac4a418414ba85229f36c820c826fd0f"
+      "0x07652d4f840c58241e9fed7ed1645addccb811b2cee109be6210177bcfe421f2",
+      "0xccef3f33975d9842c77908554aaba927bd0457d16a87e2c6b2a69878fc6e1c93"
     ],
     "amount": "10000000000000000000",
     "index": 0
   },
-  "0x8e8b3e19717A5DDCfccce9Bf3b225E61efDD7937": {
-    "address": "0x8e8b3e19717A5DDCfccce9Bf3b225E61efDD7937",
+  "0x15b2113FA96aA020BB93606f4c991416F0E07308": {
+    "address": "0x15b2113FA96aA020BB93606f4c991416F0E07308",
     "proof": [
-      "0x8ac9c0cafeb3eb163351f8c7a0f917f41197d6e3d15d726c54bd477731b7a522",
-      "0x91e40bd1eb9ff4865b54fd9995f0cb59ac4a418414ba85229f36c820c826fd0f"
+      "0x29930953cb41adff833ad384cea81504bdb2624db73c07a1ca2207c1dca415d4",
+      "0xccef3f33975d9842c77908554aaba927bd0457d16a87e2c6b2a69878fc6e1c93"
     ],
     "amount": "10000000000000000000",
     "index": 1
   },
-  "0xf4905BD17982966bb4bb5Faac8Cd117bE8a59EF6": {
-    "address": "0xf4905BD17982966bb4bb5Faac8Cd117bE8a59EF6",
-    "proof": [
-      "0xb08a9617ac0bbe4d4d24dc6745592a40fa9e0371a4fcc3d8e15e2e5d8cf0f4e4",
-      "0xb74a608570f529ec985ae105c0c04e9815557c6de71f034d27109b12381ea2ea"
-    ],
+  "0x804DfAb3Fb1d76C1a2F635b390c5C2E5A81CE7b9": {
+    "address": "0x804DfAb3Fb1d76C1a2F635b390c5C2E5A81CE7b9",
+    "proof": ["0xd919a4bcd3d94338ab78c40fc569eb7a6fd64ee8f7fc04d2f2ff3d7aa127c8af"],
     "amount": "10000000000000000000",
     "index": 2
-  },
-  "0xdc826ac58a5fa9f4f35aad8ad6b679fa2f9fd6dd": {
-    "address": "0xdc826ac58a5fa9f4f35aad8ad6b679fa2f9fd6dd",
-    "proof": [
-      "0xb267b8d28472634ffc763f8086b0039e9315346f54190989dcf269916a627592",
-      "0xb74a608570f529ec985ae105c0c04e9815557c6de71f034d27109b12381ea2ea"
-    ],
-    "amount": "10000000000000000000",
-    "index": 3
   }
 }

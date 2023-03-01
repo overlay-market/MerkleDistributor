@@ -6,18 +6,15 @@ import { tree } from './Tree'
 
 async function main() {
   const root = tree()
-  const endTime = 86400 + 1677213539
+  const endTime = 1677789942
 
-  const Token = await ethers.getContractFactory('TestERC20')
-  const token = await Token.deploy('Demo', 'DM', '100000000000000000000')
+  const TokenArb = '0x4D95e223e9C8bD4b06D50fB9A1586e1f227f9765'
 
   const MerkleDistributor = await ethers.getContractFactory('MerkleDistributor')
-  const merkleDistributor = await MerkleDistributor.deploy(token.address, root, endTime)
+  const merkleDistributor = await MerkleDistributor.deploy(TokenArb, root, endTime)
 
   await merkleDistributor.deployed()
-  console.log(
-    `merkleDistributor deployed at ${merkleDistributor.address}, merkleRoot for users: ${root}, address: ${token.address}`
-  )
+  console.log(`merkleDistributor deployed at ${merkleDistributor.address}, merkleRoot for users: ${root}`)
 }
 
 main()
