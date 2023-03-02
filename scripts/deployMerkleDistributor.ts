@@ -6,18 +6,17 @@ import { tree } from './Tree'
 
 async function main() {
   const root = tree()
-  const endTime = 86400 + 1677213539
+  const endTime = 1677951000
 
-  const Token = await ethers.getContractFactory('TestERC20')
-  const token = await Token.deploy('Demo', 'DM', '100000000000000000000')
+  const TokenArb = '0x4305C4Bc521B052F17d389c2Fe9d37caBeB70d54'
+  const OvlFoundationAdddress = '0xBC443021E85837Ee92dAf1378a2209A2c23a0062'
 
   const MerkleDistributor = await ethers.getContractFactory('MerkleDistributor')
-  const merkleDistributor = await MerkleDistributor.deploy(token.address, root, endTime)
+  const merkleDistributor = await MerkleDistributor.deploy(TokenArb, root, endTime)
 
   await merkleDistributor.deployed()
-  console.log(
-    `merkleDistributor deployed at ${merkleDistributor.address}, merkleRoot for users: ${root}, address: ${token.address}`
-  )
+  await merkleDistributor.transferOwnership(OvlFoundationAdddress)
+  console.log(`merkleDistributor deployed at ${merkleDistributor.address}, merkleRoot for users: ${root}`)
 }
 
 main()
@@ -29,5 +28,5 @@ main()
     process.exit(1)
   })
 
-// npx hardhat run --network goerli scripts/deployMerkleDistributor.ts
-// npx hardhat verify --network goerli 0x3C28Bb293A1f7AA17A29C570e023042346444846 Demo DM 100000000000000000000
+// npx hardhat run --network arbitrum_mainnet scripts/deployMerkleDistributor.ts
+// npx hardhat verify --network arbitrum_mainnet 0x455e3C831471Ab7f8B2122Dc5164f5bB871111FE 0x1e77c4764db2c9f887E8A9122f2eE400C42530aA 0xbf4b054d1efc570b375b3ed62082fcd9c10986e2185f1319865243c2fe13d831 1677864600
