@@ -8,12 +8,15 @@ async function main() {
   const root = tree()
   const endTime = 1677789942
 
-  const TokenArb = '0x4D95e223e9C8bD4b06D50fB9A1586e1f227f9765'
+  const TokenArb = '0x4305C4Bc521B052F17d389c2Fe9d37caBeB70d54'
+  const OvlFoundationAdddress = '0xBC443021E85837Ee92dAf1378a2209A2c23a0062'
 
   const MerkleDistributor = await ethers.getContractFactory('MerkleDistributor')
   const merkleDistributor = await MerkleDistributor.deploy(TokenArb, root, endTime)
 
   await merkleDistributor.deployed()
+  await merkleDistributor.transferOwnership(OvlFoundationAdddress)
+
   console.log(`merkleDistributor deployed at ${merkleDistributor.address}, merkleRoot for users: ${root}`)
 }
 
