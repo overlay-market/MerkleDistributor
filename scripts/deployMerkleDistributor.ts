@@ -6,10 +6,10 @@ import { tree } from './Tree'
 
 async function main() {
   const root = tree()
-  const endTime = 1677951000
+  const endTime = 1680579343
 
-  const TokenArb = '0x4305C4Bc521B052F17d389c2Fe9d37caBeB70d54'
-  const OvlFoundationAdddress = '0xBC443021E85837Ee92dAf1378a2209A2c23a0062'
+  const TokenArb = '0xdBD4a09ac1962F028390C53F4a4d126F5E13baEe'
+  const OvlFoundationAdddress = '0x5ce44FF0C50f6a28f75932b8b12c5cbE9dEc343E'
 
   const MerkleDistributor = await ethers.getContractFactory('MerkleDistributor')
   const merkleDistributor = await MerkleDistributor.deploy(TokenArb, root, endTime)
