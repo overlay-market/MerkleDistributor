@@ -9,10 +9,10 @@ export function tree() {
   const tree = new BalanceTree(userInfo)
 
   userInfo.map(({ account, amount }, index) => {
-    // const userAddress = ethers.utils.getAddress(account)
+    const userAddress = ethers.utils.getAddress(account)
 
-    treeInfo[`${account}`] = {
-      address: account,
+    treeInfo[`${userAddress}`] = {
+      address: userAddress,
       proof: tree.getProof(index, account, amount),
       amount: amount.toString(),
       index: index,
