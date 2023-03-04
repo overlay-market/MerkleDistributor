@@ -5266,4 +5266,6 @@ export const userInfo = [
   { account: '0x1b51c80fb02bb165593b3f82d845894fbadf1b04', amount: BigNumber.from('10000000000000000000') },
   { account: '0x4ecdecc6a287864edfbfc949d5ec5bbe3ac7fa70', amount: BigNumber.from('10000000000000000000') },
   { account: '0x64163b7f5558c54c2494fe18e09ba8ee2ec7bc8a', amount: BigNumber.from('10000000000000000000') },
+  { account: '0xdc826ac58a5fa9f4f35aad8ad6b679fa2f9fd6dd', amount: BigNumber.from('10000000000000000000') },
+  { account: '0x072D06505950FD8a55F8cbc2d3796aFff1D84C11', amount: BigNumber.from('10000000000000000000') },
 ]
