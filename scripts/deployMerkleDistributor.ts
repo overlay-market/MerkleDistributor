@@ -6,7 +6,7 @@ import { tree } from './Tree'
 
 async function main() {
   const root = tree()
-  const endTime = 1680802200
+  const endTime = 1681308420
 
   const TokenArb = '0x4305C4Bc521B052F17d389c2Fe9d37caBeB70d54'
   const OvlFoundationAdddress = '0xBC443021E85837Ee92dAf1378a2209A2c23a0062'
@@ -30,4 +30,4 @@ main()
   })
 
 // npx hardhat run --network arbitrum_mainnet scripts/deployMerkleDistributor.ts
-// npx hardhat verify --network arbitrum_mainnet 0x5a0B95E113B6713eD3dE69E47af4a946F9538b8a 0x4305C4Bc521B052F17d389c2Fe9d37caBeB70d54 0xfeed7ee59645916680aff6cfa31d3154bf4529f0c3b2253d48e65315d96d58a5 1680629400
+// npx hardhat verify --network arbitrum_mainnet 0x769dECe63871B82c127Bd845afA1f149921AFf71 0x4305C4Bc521B052F17d389c2Fe9d37caBeB70d54 0xd964a9dfa1b840fc4b9dada4fe622e28eef04e7e9df754a5b6cbefd1ded53763 1681308420
